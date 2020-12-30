@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <!-- <%- include ('partials/head.html') %> -->
+
+</head>
+<body>
+
+    <%- include ('partials/navigation.html') %>
+
+    <div class="container">
+        <header class="row">
+            <div class="form-group">
+                <textarea class="form-control" id="cajaTexto"
+                cols="30" rows="10"
+                placeholder="Message"></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" onclick="callApi()">
+                    Send Message
+                </button>
+            </div>            
+        </header>
+    </div>
+
+    <div class="container-fluid" id="about">
+        <div class="row bg-dark text-white p-5 text-center">
+            <div class="col-sm-6">
+                <i class="fab fa-youtube fa-10x"></i>
+            </div>
+            <div class="col-sm-6">
+                <h3>Probando Nodejs con Express</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore ea ipsa odit suscipit error voluptate est. Molestiae facere omnis ut vel molestias corrupti, quia iste placeat, odio perspiciatis possimus aut?</p>
+            </div>
+        </div>
+
+    </div>
+
+    <%- include ('partials/footer.html') %>
+
+
+
+</body>
+</html>
